@@ -1,0 +1,317 @@
+*
+/* added different scroll-behavior */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: rgb(96, 124, 165);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #333;
+    color: rgb(115, 224, 228);
+}
+
+
+/* deleted text decoration, flex direction, border, and overflow properties as they weren't needed/didn't benefit the look */
+
+
+/* fixed margins and padding px for text to fit the area better */
+
+h1 {
+    margin: -5px -20px;
+    color: #333;
+    background-color: rgb(115, 224, 228);
+    float: left;
+    padding: 10px 22px;
+}
+
+
+/* deleted background size and background position properties since they weren't necessary*/
+
+
+/* added background image and fixed positioning with height, width and margin-bottom */
+
+.top {
+    height: 190px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/155297585-christmas-winter-concept-background-wooden-blue-bright-striped-horizontal-with-diagonal-stripes-with.jpg");
+}
+
+.top figcaption {
+    float: right;
+    background-color: rgb(115, 224, 228);
+    margin-top: 110px;
+    margin-right: 60px;
+    font-size: 30px;
+    padding: 3px;
+}
+
+div {
+    display: block;
+}
+
+
+/* deleted flex direction and background color to change the location of text and fix the visuals in css  */
+
+
+/* added overflow and changed list-style-type to none */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    text-underline-position: under;
+}
+
+
+/* changed text decoration thickness in header area (ul li) to make a thicker underline beneath the different sections */
+
+ul li {
+    text-decoration-line: underline;
+    text-decoration-thickness: 5px;
+}
+
+li {
+    float: right;
+    padding: 5px;
+    line-height: 10px;
+}
+
+li a {
+    display: block;
+    color: rgb(31, 154, 163);
+    text-align: center;
+    padding: 14px 16px;
+}
+
+li a:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* condensed alike tags and properties to make css cleaner */
+
+.aboutme,
+.work,
+.contactme,
+.resume,
+.work2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 200%;
+    padding: 10px;
+    text-align: center;
+    /* height: 400px; */
+}
+
+#aboutmep {
+    font-size: 23px;
+    color: rgb(96, 124, 165);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 5%;
+    width: 70%;
+}
+
+
+/* condensed alike tags and properties to make css cleaner */
+
+#resumep,
+#workp {
+    font-size: 30px;
+    color: rgb(96, 124, 165);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 10px solid rgb(115, 224, 228);
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 5%;
+    width: 70%;
+}
+
+#workp {
+    color: rgb(255, 255, 255);
+}
+
+
+/* condensed alike tags and properties to make css cleaner */
+
+#work2pp,
+#work2p {
+    margin: 0;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 10px solid rgb(115, 224, 228);
+    align-items: flex-end;
+    justify-content: left;
+    width: 30.5%;
+    margin-right: 5%;
+}
+
+
+/* condensed alike tags and properties to make css cleaner */
+
+#aboutmeside,
+#resumeside,
+#workside,
+#contactmeside,
+#work2side {
+    display: flex;
+    height: 400px;
+    width: 20%;
+    align-items: right;
+    border-right: 5px solid rgb(0, 0, 0);
+    padding-right: 10px;
+    flex-direction: column;
+    text-align: right;
+    font-weight: lighter;
+    font-size: 50px;
+    min-width: 200px;
+}
+
+
+/* placed an image within this section */
+
+#resumep img {
+    display: flex;
+    width: 100%;
+    margin-bottom: -.1%;
+    align-items: center;
+}
+
+
+/* placed an image within this section */
+
+
+/* condensed two tags with alike properties */
+
+#workp a img,
+#work2p a img {
+    width: 100%;
+    height: 380px;
+    margin-bottom: -2%;
+    opacity: 1;
+}
+
+
+/* placed an image within this section */
+
+#aboutmep img {
+    width: 100%;
+    height: 38px;
+    justify-content: left;
+}
+
+
+/* added hover tag for opacity to changed when mouse goes over image */
+
+#workp img:hover {
+    opacity: .5;
+}
+
+
+/* added hover tag for opacity to changed when mouse goes over image */
+
+#work2p img:hover {
+    opacity: .5;
+}
+
+#work2p a {
+    margin: 0;
+    padding: 0;
+}
+
+#label {
+    display: inline;
+    position: absolute;
+    left: 25vw;
+    color: rgb(96, 124, 165);
+    top: 1000px;
+    background-color: rgb(115, 224, 228);
+}
+
+
+/* put text over photo&link to help show the names of each project they will be deployed to if they click that picture */
+
+
+/* added css properties to that text to improve look and layout of the text */
+
+#troublemaker {
+    display: inline;
+    position: absolute;
+    left: 25vw;
+    color: rgb(96, 124, 165);
+    top: 1440px;
+    background-color: rgb(115, 224, 228);
+}
+
+
+/* put text over photo&link to help show the names of each project they will be deployed to if they click that picture */
+
+
+/* added css properties to that text to improve look and layout of the text */
+
+#troublemakerTwo {
+    display: inline;
+    position: absolute;
+    left: 63vw;
+    color: rgb(96, 124, 165);
+    top: 1440px;
+    background-color: rgb(115, 224, 228);
+}
+
+
+/* put text over photo&link to help show the names of each project they will be deployed to if they click that picture */
+
+
+/* added css properties to that text to improve look and layout of the text */
+
+#troublemakerThree {
+    display: inline;
+    position: absolute;
+    left: 63vw;
+    color: rgb(96, 124, 165);
+    top: 1440px;
+    background-color: rgb(115, 224, 228);
+}
+
+#contactmep,
+.contactmelinks {
+    margin-top: 2%;
+    margin-right: auto;
+}
+
+.contactme {
+    height: 125px;
+}
+
+#contactmeside {
+    height: 125px;
+}
+
+
+/* added media queries  */
+
+@media only screen and (max-width: 955px) {
+    .contactmelinks {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    #label,
+    #troublemaker,
+    #troublemakerTwo,
+    #troublemakerThree {
+        display: none;
+    }
+}
